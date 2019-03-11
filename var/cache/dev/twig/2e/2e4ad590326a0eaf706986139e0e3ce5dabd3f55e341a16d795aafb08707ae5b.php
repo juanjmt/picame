@@ -460,6 +460,6 @@ class __TwigTemplate_7e778071ee323c8d90df6ee7ffc7295dcf410e00f39d6fd394a0381cc8e
         </div>
     {% endfor %}
 {% endblock %}
-", "@WebProfiler/Collector/validator.html.twig", "/var/www/html/picaMe/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Collector/validator.html.twig");
+", "@WebProfiler/Collector/validator.html.twig", "/var/www/html/picame/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Collector/validator.html.twig");
     }
 }

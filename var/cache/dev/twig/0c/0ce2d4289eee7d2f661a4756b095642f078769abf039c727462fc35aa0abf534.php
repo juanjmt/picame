@@ -400,6 +400,6 @@ class __TwigTemplate_f29a9203da87ecc748c469b2290fe72760dcb9112ba67fa3f4f80af8a2e
         </div>
     {% endfor %}
 {% endblock %}
-", "@Debug/Profiler/dump.html.twig", "/var/www/html/picaMe/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views/Profiler/dump.html.twig");
+", "@Debug/Profiler/dump.html.twig", "/var/www/html/picame/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views/Profiler/dump.html.twig");
     }
 }
