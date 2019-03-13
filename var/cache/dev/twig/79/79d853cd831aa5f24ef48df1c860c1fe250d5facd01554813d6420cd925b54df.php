@@ -7,10 +7,17 @@ class __TwigTemplate_4a13d1973c1dfeca2814ede6806ff4b2562cff3e545797a802b6ab23986
     {
         parent::__construct($env);
 
-        $this->parent = false;
-
+        // line 2
+        $this->parent = $this->loadTemplate("base.html.twig", "front/index.html.twig", 2);
         $this->blocks = [
+            'title' => [$this, 'block_title'],
+            'body' => [$this, 'block_body'],
         ];
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "base.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = [])
@@ -21,18 +28,7 @@ class __TwigTemplate_4a13d1973c1dfeca2814ede6806ff4b2562cff3e545797a802b6ab23986
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "front/index.html.twig"));
 
-        // line 1
-        echo "<!DOCTYPE html>
-<html lang=\"en\" dir=\"ltr\">
-  <head>
-    <meta charset=\"utf-8\">
-    <title>pagina inicial</title>
-  </head>
-  <body>
-    pagina inicial
-  </body>
-</html>
-";
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
@@ -41,14 +37,59 @@ class __TwigTemplate_4a13d1973c1dfeca2814ede6806ff4b2562cff3e545797a802b6ab23986
 
     }
 
+    // line 3
+    public function block_title($context, array $blocks = [])
+    {
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+
+        // line 4
+        echo "  Picame!!! Tu picada Preferida
+";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
+    // line 6
+    public function block_body($context, array $blocks = [])
+    {
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+
+        // line 7
+        echo "  aqui si va el contenido central
+";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
     public function getTemplateName()
     {
         return "front/index.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  25 => 1,);
+        return array (  70 => 7,  61 => 6,  50 => 4,  41 => 3,  11 => 2,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -61,16 +102,14 @@ class __TwigTemplate_4a13d1973c1dfeca2814ede6806ff4b2562cff3e545797a802b6ab23986
 
     public function getSourceContext()
     {
-        return new Twig_Source("<!DOCTYPE html>
-<html lang=\"en\" dir=\"ltr\">
-  <head>
-    <meta charset=\"utf-8\">
-    <title>pagina inicial</title>
-  </head>
-  <body>
-    pagina inicial
-  </body>
-</html>
+        return new Twig_Source("{# plantilla de nuestra aplicacion #}
+{% extends 'base.html.twig' %}
+{%block title%}
+  Picame!!! Tu picada Preferida
+{%endblock%}
+{%block body%}
+  aqui si va el contenido central
+{%endblock%}
 ", "front/index.html.twig", "/var/www/html/picame/app/Resources/views/front/index.html.twig");
     }
 }
