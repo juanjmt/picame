@@ -19,4 +19,30 @@ class DefaultController extends Controller
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
         ]);*/
     }
+    /**
+     * @Route("/nosotros", name="nosotros")
+     */
+    public function nosotrosAction(Request $request)
+    {
+        return $this->render('front/nosotros.html.twig');
+
+    }
+    /**
+     * @Route("/contacto", name="contacto")
+     */
+    public function contactoAction(Request $request)
+    {
+        return $this->render('front/contacto.html.twig');
+
+    }
+    /**
+     * @Route("/menu/{tipo}", name="menu")
+     */
+    public function menuAction(Request $request,$tipo='all')
+    {
+        return $this->render('front/menu.html.twig');
+
+    }
+
+
 }

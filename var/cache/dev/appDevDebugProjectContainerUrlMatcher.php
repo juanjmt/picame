@@ -122,6 +122,21 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
         not_homepage:
 
+        // nosotros
+        if ('/nosotros' === $pathinfo) {
+            return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::nosotrosAction',  '_route' => 'nosotros',);
+        }
+
+        // contacto
+        if ('/contacto' === $pathinfo) {
+            return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::contactoAction',  '_route' => 'contacto',);
+        }
+
+        // menu
+        if (0 === strpos($pathinfo, '/menu') && preg_match('#^/menu(?:/(?P<tipo>[^/]++))?$#sD', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, ['_route' => 'menu']), array (  'tipo' => 'all',  '_controller' => 'AppBundle\\Controller\\DefaultController::menuAction',));
+        }
+
         if ('/' === $pathinfo && !$allow) {
             throw new Symfony\Component\Routing\Exception\NoConfigurationException();
         }

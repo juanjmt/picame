@@ -51,20 +51,85 @@ class __TwigTemplate_8b01588b8a959a491a5da0218ceec2ed62b919be26a4bccc41936f4fa37
         echo "\" rel=\"stylesheet\" />
     </head>
     <body>
+        <!-- menu principal -->
+        <nav class=\"navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top\">
+            <div class=\"container\">
+          <a class=\"navbar-brand\" href=\"";
+        // line 15
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("homepage");
+        echo "\">Picame</a>\">
+          <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+            <span class=\"navbar-toggler-icon\"></span>
+          </button>
+          <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">
+            <ul class=\"navbar-nav ml-auto\">
+                <li class=\"nav-item dropdown\">
+                  <a class=\"nav-link dropdown-toggle\" id=\"navbarDropdownBlog\" href=\"#\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                    Nuestras Picadas
+                  </a>
+                  <div class=\"dropdown-menu dropdown-menu-right\" aria-labelledby=\"navbarDropdownBlog\">
+                    <a class=\"dropdown-item\" href=\"";
+        // line 26
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("menu", ["tipo" => "all"]);
+        echo "\" >Todas</a>
+                    <a class=\"dropdown-item\" href=\"";
+        // line 27
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("menu", ["tipo" => "copada"]);
+        echo "\">Copada</a>
+                    <a class=\"dropdown-item\" href=\"";
+        // line 28
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("menu", ["tipo" => "piola"]);
+        echo "\">Piola</a>
+                    <a class=\"dropdown-item\" href=\"";
+        // line 29
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("menu", ["tipo" => "querendona"]);
+        echo "\">Querendona</a>
+                  </div>
+                </li>
+                  <li class=\"nav-item\">
+                    <a class=\"nav-link\" href=\"";
+        // line 33
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("nosotros");
+        echo "\">Nosotros</a>
+                  </li>
+                  <li class=\"nav-item\">
+                    <a class=\"nav-link\" href=\"";
+        // line 36
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("contacto");
+        echo "\">Contacto</a>
+                  </li>
+                  <li class=\"nav-item\">
+                    <a class=\"nav-link\" href=\"#\">Tu Perfil</a>
+                  </li>
+
+            </ul>
+          </div>
+        </div>
+        </nav>
+        <div class=\"container\">
         ";
-        // line 12
+        // line 47
         $this->displayBlock('body', $context, $blocks);
-        // line 13
-        echo "        ";
+        // line 48
+        echo "        </div>
+        <!-- Footer -->
+         <footer class=\"py-5 bg-dark\">
+           <div class=\"container\">
+             <p class=\"m-0 text-center text-white\">Copyright &copy; Picame 2019</p>
+           </div>
+           <!-- /.container -->
+         </footer>
+        ";
+        // line 56
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 14
+        // line 57
         echo "        <!-- Bootstrap core JavaScript -->
         <script src=\"";
-        // line 15
+        // line 58
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("vendor/jquery/jquery.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 16
+        // line 59
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("vendor/bootstrap/js/bootstrap.bundle.min.js"), "html", null, true);
         echo "\"></script>
 
@@ -114,7 +179,7 @@ class __TwigTemplate_8b01588b8a959a491a5da0218ceec2ed62b919be26a4bccc41936f4fa37
 
     }
 
-    // line 12
+    // line 47
     public function block_body($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
@@ -131,7 +196,7 @@ class __TwigTemplate_8b01588b8a959a491a5da0218ceec2ed62b919be26a4bccc41936f4fa37
 
     }
 
-    // line 13
+    // line 56
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
@@ -160,7 +225,7 @@ class __TwigTemplate_8b01588b8a959a491a5da0218ceec2ed62b919be26a4bccc41936f4fa37
 
     public function getDebugInfo()
     {
-        return array (  135 => 13,  118 => 12,  101 => 6,  83 => 5,  68 => 16,  64 => 15,  61 => 14,  58 => 13,  56 => 12,  50 => 9,  46 => 8,  41 => 7,  39 => 6,  35 => 5,  29 => 1,);
+        return array (  200 => 56,  183 => 47,  166 => 6,  148 => 5,  133 => 59,  129 => 58,  126 => 57,  124 => 56,  114 => 48,  112 => 47,  98 => 36,  92 => 33,  85 => 29,  81 => 28,  77 => 27,  73 => 26,  59 => 15,  50 => 9,  46 => 8,  41 => 7,  39 => 6,  35 => 5,  29 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -184,7 +249,50 @@ class __TwigTemplate_8b01588b8a959a491a5da0218ceec2ed62b919be26a4bccc41936f4fa37
         <link href=\"{{ asset('css/modern-business.css') }}\" rel=\"stylesheet\" />
     </head>
     <body>
+        <!-- menu principal -->
+        <nav class=\"navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top\">
+            <div class=\"container\">
+          <a class=\"navbar-brand\" href=\"{{ path('homepage') }}\">Picame</a>\">
+          <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+            <span class=\"navbar-toggler-icon\"></span>
+          </button>
+          <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">
+            <ul class=\"navbar-nav ml-auto\">
+                <li class=\"nav-item dropdown\">
+                  <a class=\"nav-link dropdown-toggle\" id=\"navbarDropdownBlog\" href=\"#\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                    Nuestras Picadas
+                  </a>
+                  <div class=\"dropdown-menu dropdown-menu-right\" aria-labelledby=\"navbarDropdownBlog\">
+                    <a class=\"dropdown-item\" href=\"{{ path('menu',{'tipo':'all'}) }}\" >Todas</a>
+                    <a class=\"dropdown-item\" href=\"{{ path('menu',{'tipo':'copada'}) }}\">Copada</a>
+                    <a class=\"dropdown-item\" href=\"{{ path('menu',{'tipo':'piola'}) }}\">Piola</a>
+                    <a class=\"dropdown-item\" href=\"{{ path('menu',{'tipo':'querendona'}) }}\">Querendona</a>
+                  </div>
+                </li>
+                  <li class=\"nav-item\">
+                    <a class=\"nav-link\" href=\"{{ path('nosotros') }}\">Nosotros</a>
+                  </li>
+                  <li class=\"nav-item\">
+                    <a class=\"nav-link\" href=\"{{ path('contacto') }}\">Contacto</a>
+                  </li>
+                  <li class=\"nav-item\">
+                    <a class=\"nav-link\" href=\"#\">Tu Perfil</a>
+                  </li>
+
+            </ul>
+          </div>
+        </div>
+        </nav>
+        <div class=\"container\">
         {% block body %}{% endblock %}
+        </div>
+        <!-- Footer -->
+         <footer class=\"py-5 bg-dark\">
+           <div class=\"container\">
+             <p class=\"m-0 text-center text-white\">Copyright &copy; Picame 2019</p>
+           </div>
+           <!-- /.container -->
+         </footer>
         {% block javascripts %}{% endblock %}
         <!-- Bootstrap core JavaScript -->
         <script src=\"{{ asset('vendor/jquery/jquery.min.js')}}\"></script>
