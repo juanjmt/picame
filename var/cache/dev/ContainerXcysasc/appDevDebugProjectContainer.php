@@ -1,6 +1,6 @@
 <?php
 
-namespace ContainerCoqv40b;
+namespace ContainerXcysasc;
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -2165,9 +2165,9 @@ class appDevDebugProjectContainer extends Container
             'container.dumper.inline_class_loader' => true,
             'database_host' => '127.0.0.1',
             'database_port' => NULL,
-            'database_name' => 'symfony',
+            'database_name' => 'picame',
             'database_user' => 'root',
-            'database_password' => NULL,
+            'database_password' => 'jjmt1665',
             'mailer_transport' => 'smtp',
             'mailer_host' => '127.0.0.1',
             'mailer_user' => NULL,

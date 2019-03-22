@@ -73,7 +73,27 @@ class __TwigTemplate_6e375dbc6e17f4744bbedd6cf6a8f8dd0b0f3227465333a3b19c88cce2a
     Nuestras Picadas
 
 </h3>
+";
+        // line 13
+        if (((($context["tipo"] ?? $this->getContext($context, "tipo")) == "all") || (($context["tipo"] ?? $this->getContext($context, "tipo")) == "copada"))) {
+            // line 14
+            echo "<h3 class=\"mt-4 mb-3\">
+    La Copada
 
+</h3>
+";
+        }
+        // line 19
+        if (((($context["tipo"] ?? $this->getContext($context, "tipo")) == "all") || (($context["tipo"] ?? $this->getContext($context, "tipo")) == "piola"))) {
+            // line 20
+            echo "<h3 class=\"mt-4 mb-3\">
+    La Piola
+
+</h3>
+";
+        }
+        // line 25
+        echo "
 <br>
 <br>
 <!-- /.container -->
@@ -98,7 +118,7 @@ class __TwigTemplate_6e375dbc6e17f4744bbedd6cf6a8f8dd0b0f3227465333a3b19c88cce2a
 
     public function getDebugInfo()
     {
-        return array (  70 => 7,  61 => 6,  50 => 4,  41 => 3,  11 => 2,);
+        return array (  96 => 25,  89 => 20,  87 => 19,  80 => 14,  78 => 13,  70 => 7,  61 => 6,  50 => 4,  41 => 3,  11 => 2,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -123,6 +143,18 @@ class __TwigTemplate_6e375dbc6e17f4744bbedd6cf6a8f8dd0b0f3227465333a3b19c88cce2a
     Nuestras Picadas
 
 </h3>
+{% if tipo=='all' or tipo=='copada'%}
+<h3 class=\"mt-4 mb-3\">
+    La Copada
+
+</h3>
+{% endif %}
+{% if  tipo=='all' or tipo=='piola' %}
+<h3 class=\"mt-4 mb-3\">
+    La Piola
+
+</h3>
+{% endif %}
 
 <br>
 <br>

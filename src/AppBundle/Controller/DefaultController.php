@@ -40,7 +40,7 @@ class DefaultController extends Controller
      */
     public function menuAction(Request $request,$tipo='all')
     {
-        return $this->render('front/menu.html.twig');
+        return $this->render('front/menu.html.twig',array('tipo' => $tipo ));
 
     }
 
