@@ -1,6 +1,6 @@
 <?php
 
-namespace ContainerU9kbixx;
+namespace ContainerUji5kdi;
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -1290,6 +1290,9 @@ class appDevDebugProjectContainer extends Container
         $instance->addListener('kernel.request', [0 => function () {
             return ${($_ = isset($this->services['debug.debug_handlers_listener']) ? $this->services['debug.debug_handlers_listener'] : $this->getDebug_DebugHandlersListenerService()) && false ?: '_'};
         }, 1 => 'configure'], 2048);
+        $instance->addListener('console.command', [0 => function () {
+            return ${($_ = isset($this->services['debug.debug_handlers_listener']) ? $this->services['debug.debug_handlers_listener'] : $this->getDebug_DebugHandlersListenerService()) && false ?: '_'};
+        }, 1 => 'configure'], 2048);
         $instance->addListener('kernel.request', [0 => function () {
             return ${($_ = isset($this->services['router_listener']) ? $this->services['router_listener'] : $this->getRouterListenerService()) && false ?: '_'};
         }, 1 => 'onKernelRequest'], 32);
@@ -2162,9 +2165,9 @@ class appDevDebugProjectContainer extends Container
             'container.dumper.inline_class_loader' => true,
             'database_host' => '127.0.0.1',
             'database_port' => NULL,
-            'database_name' => 'symfony',
+            'database_name' => 'picame',
             'database_user' => 'root',
-            'database_password' => NULL,
+            'database_password' => 'jjmt1665',
             'mailer_transport' => 'smtp',
             'mailer_host' => '127.0.0.1',
             'mailer_user' => NULL,
