@@ -1,0 +1,87 @@
+======Instalacion de Symfony 3.4=====
+
+ sudo mkdir -p /usr/local/bin
+ sudo curl -LsS https://symfony.com/installer -o /usr/local/bin/symfony
+ sudo chmod a+x /usr/local/bin/symfony
+
+2) === crear proyecto ==
+symfony new my_project_name 3.4
+
+==tambien lo podemos hacer con composer
+ composer create-project symfony/framework-standard-edition my_project_name
+
+3) iniciar el server interno
+php bin/console server:start
+para ingresar php bin/console server:start
+
+3) directorios
+    en el SRC ahi es donde vamos a poner nuestros objetos de desarrollo
+    en el APP van todas las confguraciones de los correos, plantillas etc
+
+4) para empezar 
+  ** se va autilzar el default controler: Src=> Bunddle => Controller => DefaultController
+  vamos a empezar a definir las rutas  :App => Resources => view => carpeta
+
+5) plantillas, hacer el header y footer estaticos
+    vamos a usar la base que esta de ejemplo ya con estructura
+    {% extends 'base.html.twig' %}
+    para agregar contenido en la pagina debemos llamar el bloque que este definido en la base
+    ejemplo:
+    
+    {%block body%}
+    aqui si va el contenido central
+    {%endblock%}
+6) integración de plantilla de boostrap
+    - en el directorio web se coloca  las carpetas de bootstrap y el js 
+    - en este caso estamos utilizando un plantilla por lo tanta copiasmos el directorio de la plantilla vender a web
+    - en el archivo base de la estructura ahi vamos a incluir la direccion de css incluyendo formato  twing con un asset
+        <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />
+    - menu : a los enlaces colocamos de la siguiente manera href="{{ path('homepage') }}"
+    -si queremos agregar una nueva ruta debemos definir una nueva funcion en nuestro controlador
+        donde agregamos 
+    /**
+     * @Route("/nosotros", name="nosotros")
+     */
+    public function nosotrosAction(Request $request)
+    {
+        return $this->render('front/index.html.twig');
+
+    }
+     href="{{ path('homepage') }}"
+
+7) vamos a crear un controller de visializacion para la ruta de nosotros
+
+    creamos en la carpeta resources -> view-> front nuestra pagina de nostros
+    las imagenes se crea una carpeta en web
+
+8) pasar parametros para las rutas con parametros aca el ejemplo
+=======en el enrutador - Controller
+    /**
+     * @Route("/menu/{tipo}", name="menu")
+     */
+    public function menuAction(Request $request,$tipo)
+    {
+=== en los enlaces
+    href="{{ path('menu',{'tipo':'all'}) }}"
+=== parametros en twig para poder mostrar una cosa u otro
+return $this->render('front/menu.html.twig',array('tipo' => ,$tipo ););
+== recepcion de parametros en la vista
+{% if tipo=='all' or tipo=='copada'%}
+<h3 class="mt-4 mb-3">
+    La Copada
+
+</h3>
+{% endif %}
+9)==base de datos -> syphony utiliza una libreria de doctrine para base de datos
+- para configurar la base de datos lo hacemos en app/config/parameters.yml
+- para establecer que motor de base de datos se va a usar es el archivo// app/config/config.php, en linea que dice doctrine
+- crear la base de datos: php bin/console doctrine:database:create
+
+10)==definicion de entity o tabla
+    - php bin/console doctrine:generate:entity
+    -    el va a realizar una serie de preguntas entre esas para definir la entity hay que decir a que Bundle va a ir asignado
+    - The Entity shortcut name: AppBundle:Categorias
+    empieza a pedir los diferentes campos y al finalizar crear estos dos archivoslos son para 
+    -> Generating entity class src/AppBundle/Entity/Categorias.php: OK! (sobre los campos)
+    -> Generating repository class src/AppBundle/Repository/CategoriasRepository.php: OK! (interacion con la base )
+    - para aplicar cambios en la base se agrega el siguiente comando php bin/console doctrine:schema:update --force

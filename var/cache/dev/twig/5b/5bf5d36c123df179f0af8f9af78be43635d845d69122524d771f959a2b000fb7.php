@@ -57,7 +57,9 @@ class __TwigTemplate_8b01588b8a959a491a5da0218ceec2ed62b919be26a4bccc41936f4fa37
           <a class=\"navbar-brand\" href=\"";
         // line 15
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("homepage");
-        echo "\">Picame</a>\">
+        echo "\"><img style=\"width: 12em; height: 5em;\" src=\"";
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("logopicame.png"), "html", null, true);
+        echo "\"></a>
           <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
             <span class=\"navbar-toggler-icon\"></span>
           </button>
@@ -225,7 +227,7 @@ class __TwigTemplate_8b01588b8a959a491a5da0218ceec2ed62b919be26a4bccc41936f4fa37
 
     public function getDebugInfo()
     {
-        return array (  200 => 56,  183 => 47,  166 => 6,  148 => 5,  133 => 59,  129 => 58,  126 => 57,  124 => 56,  114 => 48,  112 => 47,  98 => 36,  92 => 33,  85 => 29,  81 => 28,  77 => 27,  73 => 26,  59 => 15,  50 => 9,  46 => 8,  41 => 7,  39 => 6,  35 => 5,  29 => 1,);
+        return array (  202 => 56,  185 => 47,  168 => 6,  150 => 5,  135 => 59,  131 => 58,  128 => 57,  126 => 56,  116 => 48,  114 => 47,  100 => 36,  94 => 33,  87 => 29,  83 => 28,  79 => 27,  75 => 26,  59 => 15,  50 => 9,  46 => 8,  41 => 7,  39 => 6,  35 => 5,  29 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -252,7 +254,7 @@ class __TwigTemplate_8b01588b8a959a491a5da0218ceec2ed62b919be26a4bccc41936f4fa37
         <!-- menu principal -->
         <nav class=\"navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top\">
             <div class=\"container\">
-          <a class=\"navbar-brand\" href=\"{{ path('homepage') }}\">Picame</a>\">
+          <a class=\"navbar-brand\" href=\"{{ path('homepage') }}\"><img style=\"width: 12em; height: 5em;\" src=\"{{asset('logopicame.png')}}\"></a>
           <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
             <span class=\"navbar-toggler-icon\"></span>
           </button>

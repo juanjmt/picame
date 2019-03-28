@@ -67,7 +67,46 @@ class __TwigTemplate_4a13d1973c1dfeca2814ede6806ff4b2562cff3e545797a802b6ab23986
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 7
-        echo "  aqui si va el contenido central
+        echo "<header>
+  <div id=\"carouselExampleIndicators\" class=\"carousel slide\" data-ride=\"carousel\">
+    <ol class=\"carousel-indicators\">
+      <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"0\" class=\"active\"></li>
+      <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"1\"></li>
+      <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"2\"></li>
+    </ol>
+    <div class=\"carousel-inner\" role=\"listbox\">
+      <!-- Slide One - Set the background image for this slide in the line below -->
+      <div class=\"carousel-item active\" style=\"background-image: url('http://placehold.it/1900x1080')\">
+        <div class=\"carousel-caption d-none d-md-block\">
+          <h3>First Slide</h3>
+          <p>This is a description for the first slide.</p>
+        </div>
+      </div>
+      <!-- Slide Two - Set the background image for this slide in the line below -->
+      <div class=\"carousel-item\" style=\"background-image: url('http://placehold.it/1900x1080')\">
+        <div class=\"carousel-caption d-none d-md-block\">
+          <h3>Second Slide</h3>
+          <p>This is a description for the second slide.</p>
+        </div>
+      </div>
+      <!-- Slide Three - Set the background image for this slide in the line below -->
+      <div class=\"carousel-item\" style=\"background-image: url('http://placehold.it/1900x1080')\">
+        <div class=\"carousel-caption d-none d-md-block\">
+          <h3>Third Slide</h3>
+          <p>This is a description for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <a class=\"carousel-control-prev\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"prev\">
+      <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>
+      <span class=\"sr-only\">Previous</span>
+    </a>
+    <a class=\"carousel-control-next\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"next\">
+      <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>
+      <span class=\"sr-only\">Next</span>
+    </a>
+  </div>
+</header>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -108,7 +147,46 @@ class __TwigTemplate_4a13d1973c1dfeca2814ede6806ff4b2562cff3e545797a802b6ab23986
   Picame!!! Tu picada Preferida
 {%endblock%}
 {%block body%}
-  aqui si va el contenido central
+<header>
+  <div id=\"carouselExampleIndicators\" class=\"carousel slide\" data-ride=\"carousel\">
+    <ol class=\"carousel-indicators\">
+      <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"0\" class=\"active\"></li>
+      <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"1\"></li>
+      <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"2\"></li>
+    </ol>
+    <div class=\"carousel-inner\" role=\"listbox\">
+      <!-- Slide One - Set the background image for this slide in the line below -->
+      <div class=\"carousel-item active\" style=\"background-image: url('http://placehold.it/1900x1080')\">
+        <div class=\"carousel-caption d-none d-md-block\">
+          <h3>First Slide</h3>
+          <p>This is a description for the first slide.</p>
+        </div>
+      </div>
+      <!-- Slide Two - Set the background image for this slide in the line below -->
+      <div class=\"carousel-item\" style=\"background-image: url('http://placehold.it/1900x1080')\">
+        <div class=\"carousel-caption d-none d-md-block\">
+          <h3>Second Slide</h3>
+          <p>This is a description for the second slide.</p>
+        </div>
+      </div>
+      <!-- Slide Three - Set the background image for this slide in the line below -->
+      <div class=\"carousel-item\" style=\"background-image: url('http://placehold.it/1900x1080')\">
+        <div class=\"carousel-caption d-none d-md-block\">
+          <h3>Third Slide</h3>
+          <p>This is a description for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <a class=\"carousel-control-prev\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"prev\">
+      <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>
+      <span class=\"sr-only\">Previous</span>
+    </a>
+    <a class=\"carousel-control-next\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"next\">
+      <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>
+      <span class=\"sr-only\">Next</span>
+    </a>
+  </div>
+</header>
 {%endblock%}
 ", "front/index.html.twig", "/var/www/html/picame/app/Resources/views/front/index.html.twig");
     }
