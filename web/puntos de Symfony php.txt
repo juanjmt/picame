@@ -18,7 +18,7 @@ para ingresar php bin/console server:start
     en el SRC ahi es donde vamos a poner nuestros objetos de desarrollo
     en el APP van todas las confguraciones de los correos, plantillas etc
 
-4) para empezar 
+4) para empezar
   ** se va autilzar el default controler: Src=> Bunddle => Controller => DefaultController
   vamos a empezar a definir las rutas  :App => Resources => view => carpeta
 
@@ -27,18 +27,18 @@ para ingresar php bin/console server:start
     {% extends 'base.html.twig' %}
     para agregar contenido en la pagina debemos llamar el bloque que este definido en la base
     ejemplo:
-    
+
     {%block body%}
     aqui si va el contenido central
     {%endblock%}
 6) integración de plantilla de boostrap
-    - en el directorio web se coloca  las carpetas de bootstrap y el js 
+    - en el directorio web se coloca  las carpetas de bootstrap y el js
     - en este caso estamos utilizando un plantilla por lo tanta copiasmos el directorio de la plantilla vender a web
     - en el archivo base de la estructura ahi vamos a incluir la direccion de css incluyendo formato  twing con un asset
         <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />
     - menu : a los enlaces colocamos de la siguiente manera href="{{ path('homepage') }}"
     -si queremos agregar una nueva ruta debemos definir una nueva funcion en nuestro controlador
-        donde agregamos 
+        donde agregamos
     /**
      * @Route("/nosotros", name="nosotros")
      */
@@ -81,7 +81,12 @@ return $this->render('front/menu.html.twig',array('tipo' => ,$tipo ););
     - php bin/console doctrine:generate:entity
     -    el va a realizar una serie de preguntas entre esas para definir la entity hay que decir a que Bundle va a ir asignado
     - The Entity shortcut name: AppBundle:Categorias
-    empieza a pedir los diferentes campos y al finalizar crear estos dos archivoslos son para 
+    empieza a pedir los diferentes campos y al finalizar crear estos dos archivoslos son para
     -> Generating entity class src/AppBundle/Entity/Categorias.php: OK! (sobre los campos)
     -> Generating repository class src/AppBundle/Repository/CategoriasRepository.php: OK! (interacion con la base )
     - para aplicar cambios en la base se agrega el siguiente comando php bin/console doctrine:schema:update --force
+
+11) para incluir las imagenes en el slider se debe hacer por medio de asset
+    EN si se llaman linking to access y esta es usada ya que no importa el lugar que se encuentre la imagen para encotrarla
+    ademas si estas en desarrollo y al pase a produccion no afecta
+    {{asset('img/banner1.jpg')}}

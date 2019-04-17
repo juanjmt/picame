@@ -108,7 +108,7 @@ class __TwigTemplate_eee1a3bc5ef6f483d27f00b665fc437fb1af88a3978ecb1b38ea19c68e1
           </div>
         </div>
         </nav>
-        <div class=\"container\">
+        <div>
         ";
         // line 47
         $this->displayBlock('body', $context, $blocks);
@@ -285,7 +285,7 @@ class __TwigTemplate_eee1a3bc5ef6f483d27f00b665fc437fb1af88a3978ecb1b38ea19c68e1
           </div>
         </div>
         </nav>
-        <div class=\"container\">
+        <div>
         {% block body %}{% endblock %}
         </div>
         <!-- Footer -->

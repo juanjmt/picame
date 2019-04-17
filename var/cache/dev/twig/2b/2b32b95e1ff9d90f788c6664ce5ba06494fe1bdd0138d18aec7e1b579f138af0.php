@@ -67,7 +67,58 @@ class __TwigTemplate_711d085472352363ec79c88961a3d3140f5a768d3723e86a7cfcac10d11
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 7
-        echo "  aqui si va el contenido central
+        echo "<header>
+  <div id=\"carouselExampleIndicators\" class=\"carousel slide\" data-ride=\"carousel\">
+    <ol class=\"carousel-indicators\">
+      <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"0\" class=\"active\"></li>
+      <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"1\"></li>
+      <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"2\"></li>
+    </ol>
+    <div class=\"carousel-inner\" role=\"listbox\">
+      <!-- Slide One - Set the background image for this slide in the line below -->
+      <div class=\"carousel-item active\" style=\"background-image: url(";
+        // line 16
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/banner1.jpg"), "html", null, true);
+        echo ")\">
+        <div class=\"carousel-caption d-none d-md-block\">
+          <h3>Para un mejor disfrute</h3>
+          <p>This is a description for the first slide.</p>
+        </div>
+      </div>
+      <!-- Slide Two - Set the background image for this slide in the line below -->
+      <div class=\"carousel-item\" style=\"background-image: url(";
+        // line 23
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/banner2.jpg"), "html", null, true);
+        echo ")\">
+        <div class=\"carousel-caption d-none d-md-block\">
+          <h3>Con la mejor compañia</h3>
+          <p>This is a description for the second slide.</p>
+        </div>
+      </div>
+      <!-- Slide Three - Set the background image for this slide in the line below -->
+      <div class=\"carousel-item\" style=\"background-image: url(";
+        // line 30
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/banner3.jpg"), "html", null, true);
+        echo ")\">
+        <div class=\"carousel-caption d-none d-md-block\">
+          <h3>Un Sabor unico</h3>
+          <p>This is a description for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <a class=\"carousel-control-prev\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"prev\">
+      <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>
+      <span class=\"sr-only\">Previous</span>
+    </a>
+    <a class=\"carousel-control-next\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"next\">
+      <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>
+      <span class=\"sr-only\">Next</span>
+    </a>
+  </div>
+</header>
+<div class=\"container-fluid\">
+  sdsddasdasd <d<sdsadasdasdsa asdasd sadasd
+</div>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -89,7 +140,7 @@ class __TwigTemplate_711d085472352363ec79c88961a3d3140f5a768d3723e86a7cfcac10d11
 
     public function getDebugInfo()
     {
-        return array (  70 => 7,  61 => 6,  50 => 4,  41 => 3,  11 => 2,);
+        return array (  101 => 30,  91 => 23,  81 => 16,  70 => 7,  61 => 6,  50 => 4,  41 => 3,  11 => 2,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -108,7 +159,49 @@ class __TwigTemplate_711d085472352363ec79c88961a3d3140f5a768d3723e86a7cfcac10d11
   Picame!!! Tu picada Preferida
 {%endblock%}
 {%block body%}
-  aqui si va el contenido central
+<header>
+  <div id=\"carouselExampleIndicators\" class=\"carousel slide\" data-ride=\"carousel\">
+    <ol class=\"carousel-indicators\">
+      <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"0\" class=\"active\"></li>
+      <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"1\"></li>
+      <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"2\"></li>
+    </ol>
+    <div class=\"carousel-inner\" role=\"listbox\">
+      <!-- Slide One - Set the background image for this slide in the line below -->
+      <div class=\"carousel-item active\" style=\"background-image: url({{asset('img/banner1.jpg')}})\">
+        <div class=\"carousel-caption d-none d-md-block\">
+          <h3>Para un mejor disfrute</h3>
+          <p>This is a description for the first slide.</p>
+        </div>
+      </div>
+      <!-- Slide Two - Set the background image for this slide in the line below -->
+      <div class=\"carousel-item\" style=\"background-image: url({{asset('img/banner2.jpg')}})\">
+        <div class=\"carousel-caption d-none d-md-block\">
+          <h3>Con la mejor compañia</h3>
+          <p>This is a description for the second slide.</p>
+        </div>
+      </div>
+      <!-- Slide Three - Set the background image for this slide in the line below -->
+      <div class=\"carousel-item\" style=\"background-image: url({{asset('img/banner3.jpg')}})\">
+        <div class=\"carousel-caption d-none d-md-block\">
+          <h3>Un Sabor unico</h3>
+          <p>This is a description for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <a class=\"carousel-control-prev\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"prev\">
+      <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>
+      <span class=\"sr-only\">Previous</span>
+    </a>
+    <a class=\"carousel-control-next\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"next\">
+      <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>
+      <span class=\"sr-only\">Next</span>
+    </a>
+  </div>
+</header>
+<div class=\"container-fluid\">
+  sdsddasdasd <d<sdsadasdasdsa asdasd sadasd
+</div>
 {%endblock%}
 ", "front/index.html.twig", "C:\\AppServ\\www\\picame\\app\\Resources\\views\\front\\index.html.twig");
     }
